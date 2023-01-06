@@ -13,7 +13,7 @@ Currently supported (and tested) [SBC/TVboxes](https://github.com/warpme/minimyt
 -Installing ArchLinux ARM on ARM SBC is currently multistep process ([example](https://archlinuxarm.org/platforms/armv8/broadcom/raspberry-pi-4))
 
 MiniArch goal is to simplify above whole process to:
-1. [Download]() of MiniArch SD card image prepared for your SBC/TVbox
+1. [Download](https://github.com/warpme/miniarch/releases) of MiniArch SD card image prepared for your SBC/TVbox
 2. burn image on SD card
 3. insert SD Card into SBC/TVbox
 4. power-on
