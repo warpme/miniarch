@@ -39,7 +39,9 @@ including [hardware video decode capabilities](https://github.com/warpme/minimyt
      - reboot
    - type 'start'
      - select (3) to resize root partition to full possible size
-   - reboot
+   - type 'start'
+     - select (4) to update MiniArch artefacts
+     - reboot
 6. enjoy
 
 ## Difference between ArchLinux ARM and MiniArch
