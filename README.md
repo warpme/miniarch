@@ -66,6 +66,7 @@ MiniArch specific components:
 - linux-aarch64-headers
 - linux-aarch64-api-headers
 - linux-firmware
+- miniarch-meta
 
 are blocked in ArchLinux ARM pacman official repo updates and are separately offered in dedicated repo called MiniArch
 
