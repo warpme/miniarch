@@ -49,10 +49,10 @@ including [hardware video decode capabilities](https://github.com/warpme/minimyt
 Currently automated MiniArch build process is following:
 1. cross building current mainline Linux kernel and firmware with MiniMyth2 applied patches to offer [support for](https://github.com/warpme/minimyth2#current-status)
 2. cross building selected SBC/TVbox bootloader files
-3. building ArchLinux kernel and firmware PKGs from p.1
+3. cross building ArchLinux kernel and firmware PKGs from p.1
 4. downloading ArchLinux ARM [Generic AArch64 Installation](https://archlinuxarm.org/platforms/armv8/generic)
-5. unpacking rootfs from p.4
-6. installing ArchLinux kernel and firmware PKGs generated in p.3 on unpacked rootfs from p.5
+5. unpacking rootfs from p.4 on x86 host
+6. installing ArchLinux kernel and firmware PKGs generated in p.3 on unpacked rootfs from p.5 on x86 host
 7. cross-regenrating initramfs on rootfs from p.6
 8. packing above rootfs to Generic AArch64 Installation archive for upload to MiniArch github
 9. prepare SD card image with updated rootfs and bootloader prepared in p.2 and p.7
@@ -75,6 +75,6 @@ Any MiniMyth2 kernel update will also produce updated above PKGs.
 You can update MiniArch with kernel/firmware by:
  - login as root:root
  - type 'start'
-   - select (4) to do "updating MiniArch speciffic components"
+   - select (4) to do "update MiniArch artefacts"
 
 Happy burning!
