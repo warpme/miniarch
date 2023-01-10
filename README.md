@@ -75,6 +75,6 @@ Any MiniMyth2 kernel update will also produce updated above PKGs.
 You can update MiniArch with kernel/firmware by:
  - login as root:root
  - type 'start'
-   - select (5) to do "updating MiniArch speciffic components"
+   - select (4) to do "updating MiniArch speciffic components"
 
 Happy burning!
