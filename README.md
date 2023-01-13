@@ -44,19 +44,21 @@ including [hardware video decode capabilities](https://github.com/warpme/minimyt
      - reboot
 6. enjoy
 
+NOTE: do not skip step 4 (update MiniArch artefacts) as this step - beside updating MiniArch components - also fixes bugs/issues/show stoppers in [Generic AArch64 ArchLinux ARM](https://archlinuxarm.org/platforms/armv8/generic) code
+
 ## Difference between ArchLinux ARM and MiniArch
 
 Currently automated MiniArch build process is following:
-1. cross building current mainline Linux kernel and firmware with MiniMyth2 applied patches to offer [support for](https://github.com/warpme/minimyth2#current-status)
-2. cross building selected SBC/TVbox bootloader files
-3. cross building ArchLinux kernel and firmware PKGs from p.1
-4. downloading ArchLinux ARM [Generic AArch64 Installation](https://archlinuxarm.org/platforms/armv8/generic)
+1. cross building current mainline Linux kernel and firmware with MiniMyth2 applied patches to offer [support of](https://github.com/warpme/minimyth2#current-status) SBC/TVboxes
+2. cross-building selected SBC/TVbox bootloader files
+3. cross-building ArchLinux kernel and firmware PKGs from p.1
+4. downloading ArchLinux ARM [Generic AArch64 ArchLinux ARM](https://archlinuxarm.org/platforms/armv8/generic) rootfs
 5. unpacking rootfs from p.4 on x86 host
-6. installing ArchLinux kernel and firmware PKGs generated in p.3 on unpacked rootfs from p.5 on x86 host
+6. cross-installing ArchLinux kernel and firmware PKGs generated in p.3 on unpacked rootfs from p.5 on x86 host
 7. cross-regenrating initramfs on rootfs from p.6
 8. packing above rootfs to Generic AArch64 Installation archive for upload to MiniArch github
-9. prepare SD card image with updated rootfs and bootloader prepared in p.2 and p.7
-10. xz pack SD card image for upload to MiniArch github
+9. preparing SD card image with updated rootfs and bootloader prepared in p.2 and p.7
+10. xz packing SD card image for upload to MiniArch github
 
 In above context, we may say: MiniArch is minimally required changed ArchLinux ARM and it should offer maximum compatibility with ArchLinux ARM.
 
