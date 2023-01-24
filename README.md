@@ -33,9 +33,9 @@ including [hardware video decode capabilities](https://github.com/warpme/minimyt
 5. do update
    - login as root:root
    - type 'start'
-     - select (1) to do full update
+     - select (2) to init keyring and key
    - type 'start'
-     - select (2) to init keyring and keys
+     - select (1) to do full update
      - reboot
    - type 'start'
      - select (3) to resize root partition to full possible size
