@@ -5,6 +5,7 @@
 ## What it is
 
 MiniArch is [ArchLinux ARM](https://archlinuxarm.org) set of SD card images offering plug&run ArchLinux on ARM SBC/TVbox.
+It is very minimal ArchLinux distribution with bootloader/Linux kernel maximally supporting given TVBox/SBC then offering https://wiki.archlinux.org  
 
 Currently supported (and tested) [SBC/TVboxes](https://github.com/warpme/minimyth2#current-status)
 
@@ -20,18 +21,23 @@ MiniArch goal is to simplify above whole process to:
 5. do update (see Quick Start below)
 6. enjoy full ArchLinux capabilities
 
--Offer for ArchLinux ARM ecosystem MiniMyth2 developed support for [SBC/TVboxes](https://github.com/warpme/minimyth2#current-status) 
+-Adding to ArchLinux ARM ecosystem MiniMyth2 developed support for [SBC/TVboxes](https://github.com/warpme/minimyth2#current-status) 
 including [hardware video decode capabilities](https://github.com/warpme/minimyth2#hardware-video-decode-support)
 (with following [results](https://github.com/warpme/minimyth2/blob/master/video-test-summary.txt))
 
 ## Quick Start
+Requirements:
+1. Make sure your box is connected to Eth, has IP and Internet access
+
+Install:
+Note: pls do all below steeps in exact order like below. Otherwise install will fail! 
 
 1. [Download]() SD card Image
 2. burn image on SD card
 3. insert SD Card into SBC/TVbox
 4. power-on
 5. do update
-   - login as root:root
+   - local login as root:root (ssh user:pass are alarm:alarm) 
    - type 'start'
      - select (2) to init keyring and key
    - type 'start'
@@ -42,7 +48,7 @@ including [hardware video decode capabilities](https://github.com/warpme/minimyt
    - type 'start'
      - select (4) to update MiniArch artefacts
      - reboot
-6. enjoy
+6. enjoy (i.e. install https://arm.endeavouros.com by typing 'start' then (5) or setup ArchLinux OS acordingly to https://wiki.archlinux.org/title/Installation_guide#Time_zone) 
 
 NOTE: do not skip step 4 (update MiniArch artefacts) as this step - beside updating MiniArch components - also fixes bugs/issues/show stoppers in [Generic AArch64 ArchLinux ARM](https://archlinuxarm.org/platforms/armv8/generic) code
 
