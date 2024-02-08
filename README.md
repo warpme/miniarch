@@ -3,7 +3,7 @@
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/donate/?hosted_button_id=XWV5VJH6L3DF6) for new HW support
 
 Note: 
-Last years I funded by semi-lab with 15+ various TVboxes from my private money and decided to stop investing my private money - effectively just (and seems only) to increase sells of tv box vendors.
+Last years I funded my semi-lab with 15+ various TVboxes by my private money and decided to stop investing my private money - effectively just (and seems only) - to increase sells of tv box vendors.
 
 If you want me to work on various issues or add new hardware support - pls consider donation to help me get required hardware to work on.
 Please note that this will also increase my satisfaction from - currently free of charge - work on minimyth2/miniarch.
