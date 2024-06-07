@@ -100,7 +100,7 @@ Currently automated MiniArch build process is following:
 9. preparing SD card image with updated rootfs and bootloader prepared in p.2 and p.7
 10. xz packing SD card image for upload to MiniArch github
 
-In above context, we may say: MiniArch is minimally required changed ArchLinux ARM and it should offer maximum compatibility with ArchLinux ARM.
+In above context, we may say: MiniArch is minimally required changed ArchLinux ARM to boot and work on Your box and it offers maximum compatibility with ArchLinux ARM (except kernel modules).
 
 ## Updates
 MiniArch specific components:
