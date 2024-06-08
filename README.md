@@ -71,14 +71,15 @@ Note: pls do all below steeps in exact order like below. Otherwise install will 
      - select (1) to do full update
      - reboot
    - type 'start'
+     - select (4) to update MiniArch artefacts
+     - reboot
 6. transfer system to eMMC
    - type 'start'
-     - select (5)
+     - select (0)
      - when script ends with success, remove SD Card and reboot
 7. Continue install
-     - select (3) to resize root partition to full possible size
    - type 'start'
-     - select (4) to update MiniArch artefacts
+     - select (3) to resize root partition to full possible size
      - reboot
 8. enjoy (i.e. install https://arm.endeavouros.com by typing 'start' then (5) or setup ArchLinux OS acordingly to https://wiki.archlinux.org/title/Installation_guide#Time_zone) 
 
