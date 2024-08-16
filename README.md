@@ -165,7 +165,7 @@ copy this file to ```~/minimyth2/script/kernel/linux-x.y/files``` dir with desir
 6. add ```PATCHFILES += patch_file_name``` entry in ```~/minimyth2/script/kernel/linux-x.y/Makefile``` at end of *PATCHFILES +=...* list
 7. go to ```~/minimyth2/script/kernel/linux-x.y``` and run ```make makesums-all```
 
-Now you can build kernel with your changes by ```make clean install``` and then build MiniArch image by following Example: rebuilding MiniArch image with updated kernel
+Now you can build kernel with your changes by ```make clean install``` in ```~/minimyth2/script/kernel/linux-x.y``` and then build MiniArch image by following *Example: rebuilding MiniArch image with updated kernel*
 
 Note: due nature how ```patch``` utility works - please do ```make makepatch``` on clean sources. 
 If you do this on sources with build artefacts - then ```current-changes.patch``` file will contain also build artefacts. 
@@ -178,5 +178,7 @@ Example:
 to ```~/minimyth2/script/kernel/linux-x.y/files``` dir with desired *patch_file_name*
 4. add ```PATCHFILES += patch_file_name``` entry in ```~/minimyth2/script/kernel/linux-x.y/Makefile``` at end of *PATCHFILES +=...* list
 5. go to ```~/minimyth2/script/kernel/linux-x.y``` and run ```make makesums-all```    
+
+Now you can build kernel with your changes by ```make clean install``` in ```~/minimyth2/script/kernel/linux-x.y``` and then build MiniArch image by following *Example: rebuilding MiniArch image with updated kernel*
 
 Happy building
