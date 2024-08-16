@@ -121,3 +121,62 @@ You can update MiniArch with kernel/firmware by:
    - select (4) to do "update MiniArch artefacts"
 
 Happy burning!
+
+## Building MiniArch
+MiniArch is just another project (like MiniMyth2) living in build system MiniMyth2 uses. For some background - please look https://github.com/warpme/minimyth2/wiki/Build-Instructions
+
+### Quick start
+ 
+1. setup build system by following minimyth2 build instructions from https://github.com/warpme/minimyth2/wiki/Build-Instructions till ```cd ~/minimyth2/script/meta/minimyth/```
+2. instead of ```cd ~/minimyth2/script/meta/minimyth/``` do ```cd ~/minimyth2/script/meta/miniarch/```
+3. run ```./build-image-for-board.sh```
+4. type number to select desired board then press Enter
+5. after some time Yuo should got sd card image for selected board in ```build``` dir
+6. flash to sd card. it should work ok
+
+### Developing MiniArch
+MiniArch (the same like MiniMyth2) uses common build system based on GAR (https://www.linuxjournal.com/article/5819)
+
+Most frequently actions are described here: https://github.com/warpme/minimyth2/wiki/Developing-MiniMyth2
+
+MiniArch related components are in ```~/minimyth2/script/miniarch```
+
+#### Example: rebuilding MiniArch image with updated kernel
+1. go to ```~/minimyth2/script/kernel/linux-x.y/work/main.d/linux-x.y.z```
+2. do desired changes in kernel code
+3. go to ```~/minimyth2/script/kernel/linux-x.y```
+4. run ```make rebuild reinstall```
+5. go to ```~/minimyth2/script/miniarch```
+6. run ```make update-kernel```
+7. run ```./build-image-for-board.sh```
+4. type number to select desired board then press Enter
+5. after some time You should get sd card image for selected board in ```build``` dir
+
+Note: running make clean in ```~/minimyth2/script/kernel/linux-x.y``` will delete all your changes. If you want to have them permanently, please do following:
+
+#### Include your code changes in MiniMyth2 build system
+Here is example for linux kernel:
+1. go to ```~/minimyth2/script/kernel/linux-x.y```
+2. run ```make clean patch```
+3. do desired changes in kernel code in ```~/minimyth2/script/kernel/linux-x.y/work/main.d/linux-x.y.z```
+4. run ```make makepatch``` in ```~/minimyth2/script/kernel/linux-x.y``` 
+5. you will get ```current-changes.patch``` file in ```~/minimyth2/script/kernel/linux-x.y```
+copy this file to ```~/minimyth2/script/kernel/linux-x.y/files``` dir with desired *patch_file_name*
+6. add ```PATCHFILES += patch_file_name``` entry in ```~/minimyth2/script/kernel/linux-x.y/Makefile``` at end of *PATCHFILES +=...* list
+7. go to ```~/minimyth2/script/kernel/linux-x.y``` and run ```make makesums-all```
+
+Now you can build kernel with your changes by ```make clean install``` and then build MiniArch image by following Example: rebuilding MiniArch image with updated kernel
+
+Note: due nature how ```patch``` utility works - please do ```make makepatch``` on clean sources. 
+If you do this on sources with build artefacts - then ```current-changes.patch``` file will contain also build artefacts. 
+To avoid this, you may do whole *Include your code changes in MiniMyth2 build system* procedure in some temp dir.
+
+Example:
+1. copy ```~/minimyth2/script/kernel/linux-x.y``` to ```~/minimyth2/script/kernel/linux-x.y-temp```
+2. go to ```~/minimyth2/script/kernel/linux-x.y-temp``` and do *Include your code changes in MiniMyth2 build system* procedure
+3. copy ```current-changes.patch``` file from ```~/minimyth2/script/kernel/linux-x.y-temp```
+to ```~/minimyth2/script/kernel/linux-x.y/files``` dir with desired *patch_file_name*
+4. add ```PATCHFILES += patch_file_name``` entry in ```~/minimyth2/script/kernel/linux-x.y/Makefile``` at end of *PATCHFILES +=...* list
+5. go to ```~/minimyth2/script/kernel/linux-x.y``` and run ```make makesums-all```    
+
+Happy building
