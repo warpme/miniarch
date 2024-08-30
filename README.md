@@ -85,7 +85,6 @@ Note: pls do all below steeps in exact order like below. Otherwise install will 
 
 
 NOTE: do not skip step (update MiniArch artefacts) as this step - beside updating MiniArch components - also fixes bugs/issues/show stoppers in [Generic AArch64 ArchLinux ARM](https://archlinuxarm.org/platforms/armv8/generic) code
-NOTE2: eMMC install is experimental feature and is not stable (yet)
 
 NOTE2: sometimes there are issues with Archlinux ARM mirrors avaliability. In such case do full update (option 1 in start) will be constantly failing. To overcome this You may change mirror to other one with hope other one will work better. In such case look on list of avaliable servers is here [list of mirrors](https://archlinuxarm.org/about/mirrors)
 and do following:
