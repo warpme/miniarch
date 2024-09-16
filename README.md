@@ -45,16 +45,16 @@ Note: pls do all below steeps in exact order like below. Otherwise install will 
 5. do update
    - local login as root:root (ssh user:pass are alarm:alarm) 
    - type ```start```
-     - select (2) to init keyring and key
+     - select (1) to init keyring and key
    - type ```start```
-     - select (1) to do full update
+     - select (2) to do full update
      - reboot
    - type ```start```
-     - select (3) to resize root partition to full possible size
+     - select (4) to resize root partition to full possible size
    - type ```start```
-     - select (4) to update MiniArch artefacts
+     - select (5) to update MiniArch artefacts
      - reboot
-6. enjoy (i.e. install [EndeavourOS](https://arm.endeavouros.com) by typing ```start``` then (5) or setup ArchLinux OS acordingly to [Archlinux Wiki](https://wiki.archlinux.org/title/Installation_guide#Time_zone) 
+6. enjoy (i.e. install [EndeavourOS](https://arm.endeavouros.com) by typing ```start``` then (6) or setup ArchLinux OS acordingly to [Archlinux Wiki](https://wiki.archlinux.org/title/Installation_guide#Time_zone) 
 
 ### Install (when You will use eMMC as target) :
 Note: pls do all below steeps in exact order like below. Otherwise install will fail! 
@@ -66,27 +66,27 @@ Note: pls do all below steeps in exact order like below. Otherwise install will 
 5. do update
    - local login as root:root (ssh user:pass are alarm:alarm) 
    - type ```start```
-     - select (2) to init keyring and key
+     - select (1) to init keyring and key
    - type ```start```
-     - select (1) to do full update
+     - select (2) to do full update
      - reboot
    - type ```start```
-     - select (4) to update MiniArch artefacts
+     - select (5) to update MiniArch artefacts
      - reboot
 6. transfer system to eMMC
    - type ```start```
-     - select (0)
+     - select (3)
      - when script ends with success, remove SD Card and reboot
 7. Continue install
    - type ```start```
-     - select (3) to resize root partition to full possible size
+     - select (4) to resize root partition to full possible size
      - reboot
-8. enjoy (i.e. install [EndeavourOS](https://arm.endeavouros.com) by typing ```start``` then (5) or setup ArchLinux OS acordingly to [Archlinux Wiki](https://wiki.archlinux.org/title/Installation_guide#Time_zone)
+8. enjoy (i.e. install [EndeavourOS](https://arm.endeavouros.com) by typing ```start``` then (6) or setup ArchLinux OS acordingly to [Archlinux Wiki](https://wiki.archlinux.org/title/Installation_guide#Time_zone)
 
 
 NOTE: do not skip step (update MiniArch artefacts) as this step - beside updating MiniArch components - also fixes bugs/issues/show stoppers in [Generic AArch64 ArchLinux ARM](https://archlinuxarm.org/platforms/armv8/generic) code
 
-NOTE2: sometimes there are issues with Archlinux ARM mirrors avaliability. In such case do full update (option 1 in start) will be constantly failing. To overcome this You may change mirror to other one with hope other one will work better. In such case look on list of avaliable servers is here [list of mirrors](https://archlinuxarm.org/about/mirrors)
+NOTE2: sometimes there are issues with Archlinux ARM mirrors avaliability. In such case do full update (option 2 in start) will be constantly failing. To overcome this You may change mirror to other one with hope other one will work better. In such case look on list of avaliable servers is here [list of mirrors](https://archlinuxarm.org/about/mirrors)
 and do following:
 
 #### Change mirror server for udates
