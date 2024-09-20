@@ -15,6 +15,10 @@ It is very minimal ArchLinux distribution with bootloader/Linux kernel maximally
 
 Currently supported (and tested) [SBC/TVboxes](https://github.com/warpme/minimyth2#current-status)
 
+MiniArch artefact is part of following GAR based build ecosystem:
+
+![alt text](https://github.com/warpme/minimyth2/blob/master/miniX_projects_overview.jpg?raw=true)
+
 ## Why MiniArch?
 
 -Installing ArchLinux ARM on ARM SBC is currently multistep process ([example](https://archlinuxarm.org/platforms/armv8/broadcom/raspberry-pi-4))
