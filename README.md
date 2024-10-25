@@ -143,14 +143,6 @@ You can update MiniArch with kernel/firmware by:
 
 Happy burning!
 
-## Building MiniArch
-MiniArch is just another project (like MiniMyth2) living in build system MiniMyth2 uses. For some background - please look https://github.com/warpme/minimyth2/wiki/Build-Instructions
+## Building / developing MiniArch
 
-### Quick start
- 
-1. setup build system by following minimyth2 build instructions from https://github.com/warpme/minimyth2/wiki/Build-Instructions till ```cd ~/minimyth2/script/meta/minimyth/```
-2. instead of ```cd ~/minimyth2/script/meta/minimyth/``` do ```cd ~/minimyth2/script/meta/miniarch/```
-3. run ```./build-image-for-board.sh```
-4. type number to select desired board then press Enter
-5. after some time Yuo should got sd card image for selected board in ```build``` dir
-6. flash to sd card. it should work ok
+For building / developing MiniArch - pls go to: [building wiki](https://github.com/warpme/miniarch/wiki/Building-MiniArch) or [developing wiki](https://github.com/warpme/miniarch/wiki/Developing-MiniArch)
