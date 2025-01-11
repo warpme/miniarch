@@ -106,7 +106,7 @@ On command prompt do:
 Verify Your change by:
 ```cat /etc/pacman.d/mirrorlist```
 
-Try again with update by ```start 1```
+Try again with update by ```start 2```
 
 ## Difference between ArchLinux ARM and MiniArch
 
