@@ -124,22 +124,22 @@ Currently automated MiniArch build process is following:
 
 In above context, we may say: MiniArch is minimally required changed ArchLinux ARM to boot and work on Your box and it offers maximum compatibility with ArchLinux ARM (except kernel modules).
 
-## Updates
-MiniArch specific components:
+## ArchLinux ARM and MiniArch updates
+MiniArch specific components are:
 - linux-aarch64
 - linux-aarch64-headers
 - linux-aarch64-api-headers
 - linux-firmware
 - miniarch-meta
 
-are blocked in ArchLinux ARM pacman official repo updates and are separately offered in dedicated repo called MiniArch
+Above packages are blocked in ArchLinux ARM pacman official repo updates and are separately updated from dedicated repo called MiniArch
 
 Any MiniMyth2 kernel update will also produce updated above PKGs.
 
-You can update MiniArch with kernel/firmware by:
+You can update MiniArch kernel/firmware/meta by:
  - login as root:root
  - type 'start'
-   - select (4) to do "update MiniArch artefacts"
+   - select (5) to do "update MiniArch artefacts"
 
 Happy burning!
 
