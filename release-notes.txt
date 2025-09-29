@@ -1,0 +1,12 @@
+
+29.09.2025:
+
+1. If you want to update MiniArch artefacts (option '5' in 'start' command) and Your system uses
+pacman v7 or newer - before running update MiniArch artefacts you must first manually update miniarch-meta
+package to v2.13 or newer.
+Easiest way is to run (as root) in terminal:
+
+pacman -U https://github.com/warpme/miniarch/raw/refs/heads/master/miniarch-meta-X.YY-Z-any.pkg.tar.gz
+
+where X.YY.Z is current ver of package on MiniAarch GitHub
+
