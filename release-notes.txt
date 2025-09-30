@@ -10,3 +10,7 @@ pacman -U https://github.com/warpme/miniarch/raw/refs/heads/master/miniarch-meta
 
 where X.YY.Z is current ver of package on MiniAarch GitHub
 
+(NOTE: I'm not signing MiniArch packages so You will probably need to skip PGP signature checks in pacman at
+miniarch-meta package installation. To do so you may edit the /etc/pacman.conf file and change the SigLevel
+setting to 'Never' - just for installing miniarch-mata package)
+
